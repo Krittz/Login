@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@
 }
 body,
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background: var(--grey-middle);
   width: 100vw;
   height: 100vh;
@@ -45,8 +45,8 @@ html {
   letter-spacing: 0.15rem;
   margin-bottom: 7rem;
 }
-.box input[type='text'],
-.box input[type='password'] {
+.box input[type="text"],
+.box input[type="password"] {
   display: block;
   margin: 2rem auto;
   background: var(--grey-middle);
@@ -65,8 +65,8 @@ html {
 ::-webkit-input-placeholder {
   color: var(--neon-color);
 }
-.box input[type='text']:focus,
-.box input[type='password']:focus {
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
   outline: 0.1px solid var(--neon-color);
 }
 a {
@@ -187,4 +187,18 @@ a {
 .redirectLink:hover {
   background-color: var(--neon-color);
   color: var(--dark-color);
+}
+@media (max-width: 776px) {
+  .container {
+    position: relative;
+    text-align: center;
+    background: var(--dark-color);
+    width: 40rem;
+    height: 60rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .redirectLink {
+    display: none;
+  }
 }
